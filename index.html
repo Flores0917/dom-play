@@ -1,37 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
  <head>
-     <title>Project Name</title>
+     <title>DOM Play</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/nav.css">
   <link rel="stylesheet" href="css/forms.css">
+    <style>
+    .hamlet{ 
+   /* background-color: yellow;*/
+    }
+
+        #play span{
+          /*background-color:green;*/
+        }
+    </style>
  </head>
  <body>
      <header>
-     <h1 class="page-header">Site Name </style></h1>
+     <h1 class="page-header">The Matrix </style></h1>
         <nav class="topnav" id="myTopnav">
             <a href="index.html" class="active">Home</a>
-            <a herf="#">Link</a>
-            <a herf="#">Link</a>
-            <a herf="#">Link</a>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
         </nav>
      </header>
      
    <main class="wrapper">
-       <h2 class="subheader">Project Name</h2>
-      
-       <p>Clever content goes here</p>
-       <p>Clever content goes here</p>
-       <p>Clever content goes here</p>
-       <p>Clever content goes here</p>
+       <h2 class="subheader">DOM Play</h2>
+      <div id="play">
+          <p><span data-actor="neo">Neo:You're Morpheus, you're a legend.Most hackers would die to meet you.</span></p>
+          <p><span data-actor="morpheus">Morpheus: Yes.Thank you.But I think we both know there's more to it than that.  Do you believe in fate, Neo?</span></p>
+          <p><span data-actor="neo">Neo: No.</span></p>
+          <p><span data-actor="morpheus">Morpheus: Why not?</span></p>
+          <p><span data-actor="neo">Neo: Because I don't like the idea that I'm not in control of my life.</span></p>
+          <p><span data-actor="morpheus">Morpheus: I know exactly what you mean Again, that smile that could cut glass. You could be free</span></p>
+          <p><span data-actor="neo">Neo: Free from what? </span></p>
+          <p><span data-actor="morpheus">Morpheus: The Matirx.</span></p>
+      </div>
   
      <footer>
-      <p><small>&copy; 2022-2023 by Jorge Flores, All Rights Reserved ~ 
+      <p><small>&copy;<span id="year"></span> by Jorge Flores, All Rights Reserved ~ 
           <a id="html-checker" href="#" target="_blank">Check HTML</a> ~ 
           <a id="css-checker" href="#" target="_blank">Check CSS</a></small>
+
      </p>
     </footer>
   </main>
